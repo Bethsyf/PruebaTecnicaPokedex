@@ -4,13 +4,11 @@ import Home from '../components/Home'
 
 const DashboardRouters = () => {
   return (
-    <>
-        
-            <Routes>
-                <Route path="/" element={<Home />} />                
-                               
-            </Routes>
-        </>
+    <>      
+      <Routes>
+        <Route path="/" element={<Home />} />                                 
+      </Routes>
+    </>
   )
 }
 

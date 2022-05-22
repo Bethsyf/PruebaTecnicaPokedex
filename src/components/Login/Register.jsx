@@ -10,8 +10,8 @@ const Register = () => {
       nombre:'',
       apellido:'',
       email: '',
-      password: '',
-      conpassword: ''      
+      pass: '',
+      conpass: ''      
   })
 
   const {nombre, apellido, email, password, conpassword} = formValue

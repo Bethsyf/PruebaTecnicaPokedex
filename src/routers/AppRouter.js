@@ -1,12 +1,11 @@
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from '../components/auth/Login';
-import Register from '../components/auth/Register';
-import DashboardRouters from "./DashboarRouters";
-import DashboarRouters from './DashboarRouters';
-import { PrivateRouters } from './PrivateRouter';
-import { PublicRouters } from "./PublicRouters";
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from '../components/Login/Login';
+import Register from '../components/Login/Register';
+import DashboardRouters from './DashboardRouters';
+import { PrivateRouters } from './PrivateRouters';
+import { PublicRouters } from './PublicRouters';
+import { getAuth, onAuthStateChanged } from '@firebase/auth';
 
 function AppRouter() {
   const [checking, setChecking] = useState(true)
@@ -60,9 +59,7 @@ function AppRouter() {
                         <PrivateRouters isAutentica={isLoggedIn}>
                             <DashboardRouters />
                         </PrivateRouters>
-                    } />
-                    
-
+                    } />  
                 </Routes>
             </BrowserRouter>
 

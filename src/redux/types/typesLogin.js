@@ -1,4 +1,5 @@
-
 export const typesLogin = {
-    login: 'login'
+    login: 'login',
+    register: 'register',
+    logout: 'logout'    
 }

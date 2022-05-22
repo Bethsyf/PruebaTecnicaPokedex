@@ -1,14 +1,13 @@
 import { typesLogin } from "../types/typesLogin";
 
-export const registerReducers = (state = {}, action) => {
+export const registerReducer = (state = {}, action) => {
     switch (action.type) {
         case typesLogin.register:
   
         return{
-            email: action.payload.email,
-            password: action.payload.password,
-            nombre: action.payload.nombre,
-            apellido: action.payload.apellido
+            email: action.payload.email, 
+            pass: action.payload.pass,
+            name: action.payload.name,           
         }
         default:
             return state;
