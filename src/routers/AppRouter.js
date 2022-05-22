@@ -6,6 +6,7 @@ import DashboardRouters from './DashboardRouters';
 import { PrivateRouters } from './PrivateRouters';
 import { PublicRouters } from './PublicRouters';
 import { getAuth, onAuthStateChanged } from '@firebase/auth';
+import { Spinner } from 'react-bootstrap';
 
 function AppRouter() {
   const [checking, setChecking] = useState(true)
@@ -27,13 +28,7 @@ function AppRouter() {
     if (checking) {
         return (
             <div>
-                <div className="loading">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </div>
+                <Spinner animation="border" variant="warning" />
             </div>
         )
     }

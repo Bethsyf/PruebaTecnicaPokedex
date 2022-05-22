@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-bootstrap'
+import "@fortawesome/free-solid-svg-icons"
+import { Nav } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { loginAsync, loginFacebook, loginGoogle } from '../../redux/actions/actionLogin'
 import { useForm } from '../../hooks/useForm'
@@ -67,7 +68,7 @@ const Login = () => {
                         </div>
                         <div className="card-footer">
               <div className="d-flex justify-content-center">
-              <NavLink className="text-warning" href="/register">Registrarse</NavLink>
+              <Nav.Link className="text-warning" href="/register">Registrarse</Nav.Link>
               </div>
             </div>
                     </div>
