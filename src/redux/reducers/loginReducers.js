@@ -1,12 +1,16 @@
 import { typesLogin } from "../types/typesLogin";
 
-export const loginReducers = (state ={}, action) => {
+export const loginReducers = (state = {}, action) => {
     switch (action.type) {
         case typesLogin.login:
-            return{
-                ...state
-            }
-            default:
-                return state;
+
+        return{
+            id: action.payload.id,
+            name: action.payload.displayname
+        }
+        case typesLogin.logout:
+            return [] 
+        default:
+          return state;
     }
 }
