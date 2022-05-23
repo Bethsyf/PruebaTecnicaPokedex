@@ -60,8 +60,10 @@ export const deletPokemonAsync = (nombre) => {
         console.log(datosQ)
         datosQ.forEach(docu => {
             deleteDoc(doc(DB, 'PokemonesDB', docu.id))
+            
         })
-        dispatch(deletPokemonSync(nombre))           
+        dispatch(deletPokemonSync(nombre))
+        dispatch(listPokemonesAsync())                 
     }
 
 }

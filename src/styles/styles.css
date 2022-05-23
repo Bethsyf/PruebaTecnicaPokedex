@@ -1,4 +1,6 @@
 .pokemon{
+    background-color: rgb(0, 117, 190);;
+    box-shadow: 0 6px 6px rgb(251, 27, 27);;
     position: relative;
     overflow: hidden;
     border-radius: 3px;
@@ -14,3 +16,7 @@
     transform: translateY(101%);
     transition: transform 0.5s ease-in;
 } 
+
+.yellow-color {
+    color:rgb(255, 204, 0);
+}
