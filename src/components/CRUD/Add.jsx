@@ -41,7 +41,7 @@ const Add = () => {
         <div >
              <Form className='m-5 px-3 bg-light' onSubmit={handleSubmit} margin={50}>
                  <h1 className='p-3 text-primary'>Agregar Pokemon</h1>
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group >
 
                     <Form.Label className='m-1'>Numero</Form.Label>
                     <Form.Control className='mb-2 mx-1 border-warning' type="text" name="numero" placeholder="Agrega numero" value={numero} onChange={handleInputChange} />
@@ -62,11 +62,9 @@ const Add = () => {
                     <Form.Control className='mb-2 mx-1 border-warning' type="file" name="foto" placeholder="Ingrese Imagen.jpg" onChange={handleFileChange} />
                 
                 </Form.Group>
-
                 <Button className='m-3 btn btn-warning' type="submit">
                   Agregar
-                </Button>
-             
+                </Button>             
             </Form>
         </div>
   )

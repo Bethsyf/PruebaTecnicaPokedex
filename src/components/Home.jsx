@@ -1,8 +1,9 @@
 import React from 'react'
+import List from './CRUD/List'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <List/>
   )
 }
 

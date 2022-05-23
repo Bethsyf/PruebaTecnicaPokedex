@@ -1,5 +1,4 @@
 import React from 'react'
-import "@fortawesome/free-solid-svg-icons"
 import { Nav } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { loginAsync, loginFacebook, loginGoogle } from '../../redux/actions/actionLogin'
@@ -46,7 +45,7 @@ const Login = () => {
                                     <div className="bg-warning rounded-start">
                                         <span className="m-3"><i className="fas fa-key mt-2"></i></span>
                                     </div>
-                                    <input type="password" className="form-control" placeholder="Contraseña" required
+                                    <input type="password" className="form-control" placeholder="Contraseña" 
                                         name="password" value={password}
                                         onChange={handleInputChange}/>
                                 </div>
@@ -54,18 +53,19 @@ const Login = () => {
                                 <div className="form-group mt-3">
                                     <input type="submit" value="Acceder"
                                         className="btn bg-warning float-end w-100"
-                                        name="login-btn" required/>
+                                        name="login-btn" />
                                 </div>
-                            </form>  
-                            <div className="mt-5 card-footer">
+                                <div className="mt-5 card-footer">
                             <hr className="my-4"></hr>
                             <button className="btn btn-block btn-primary w-100 my-2" style={{backgroundColor: `#dd4b39`}}
-                            type="submit"><i className="fab fa-google me-2" onClick={() => dispatch(loginGoogle())}></i> Loguearse con Google</button>
+                            type="submit"  onClick={() => dispatch(loginGoogle())}><i className="fab fa-google me-2"></i> Loguearse con Google</button>
                             <button className="btn btn-block btn-primary w-100" style={{backgroundColor: `#3b5998`}}
-                            type="submit"><i className="fab fa-facebook-f me-2" onClick={() => dispatch(loginFacebook())}></i>Loguearse con Facebook</button>
+                            type="submit" onClick={() => dispatch(loginFacebook())}><i className="fab fa-facebook-f me-2" ></i>Loguearse con Facebook</button>
 
-                            </div>                          
-                        </div>
+                            </div> 
+                            </form></div>  
+                                                     
+                        
                         <div className="card-footer">
               <div className="d-flex justify-content-center">
               <Nav.Link className="text-warning" href="/register">Registrarse</Nav.Link>

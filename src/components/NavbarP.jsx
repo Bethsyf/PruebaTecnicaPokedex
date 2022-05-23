@@ -10,11 +10,11 @@ const NavbarP = () => {
     <Navbar.Toggle  aria-controls="navbarScroll" />
     <Navbar.Collapse className="d-flex justify-content-around">      
     <Button href='/add' variant="primary">Agregar Pokemon</Button>
-      <Form  className="d-flex">
+      <Form   className="d-flex  ">
         <FormControl 
           type="search"
           placeholder="Buscar Pokemon por nombre"
-          className="me-1 "
+          className="me-1 border-warning"
           aria-label="Search"
         />
         <Button variant="warning">Buscar</Button>        
