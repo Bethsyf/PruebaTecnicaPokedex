@@ -6,7 +6,9 @@
     border-radius: 3px;
 } 
 
+
 .description{   
+    background-color: rgb(255, 204, 0);
     padding: 5px;
     position: absolute;
     left: 0;
@@ -16,7 +18,29 @@
     transform: translateY(101%);
     transition: transform 0.5s ease-in;
 } 
+.pokemon:hover .description{
+    transform: translateY(0)
+} 
 
 .yellow-color {
     color:rgb(255, 204, 0);
 }
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+     
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }

@@ -6,7 +6,7 @@ const NavbarP = () => {
     <>
   <Navbar bg="light" expand="lg">
   <Container fluid >
-    <Navbar.Brand href="/"><img  src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653249758/zoviddgxwjdb3juexlca.png' alt='logo' style={{ maxHeight: '100px' }}/></Navbar.Brand>
+    <Navbar.Brand href="/"><img  src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653327695/o3mt4pt8xdytmvrwddt5.png' alt='logo' style={{ maxHeight: '100px' }}/></Navbar.Brand>
     <Navbar.Toggle  aria-controls="navbarScroll" />
     <Navbar.Collapse className="d-flex justify-content-around">      
     <Button href='/add' variant="primary">Agregar Pokemon</Button>
