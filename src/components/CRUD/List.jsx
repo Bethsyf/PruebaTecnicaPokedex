@@ -41,7 +41,7 @@ const List = () => {
               <div className="description">
                 <Card.Text className="text-danger" >Tipo: {p.tipo1} {p.tipo2}</Card.Text>
                 <Card.Text className="text-danger mb-5" >Evolución de: {p.evolucion}</Card.Text>
-                <div><Button className="card-button" href="/detail">Ver más detalles</Button></div>
+                <div><Button className="card-button" href="/detail">Ver más... detalles</Button></div>
               </div>
             </Card>
           ))

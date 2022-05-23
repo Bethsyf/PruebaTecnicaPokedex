@@ -119,11 +119,11 @@ export const searchPokemonAsync = (nombreBuscar)=>{
         const q = query(collectionListar, where('nombre', '>=', nombreBuscar), where('nombre', '<=', nombreBuscar + '~'))
         const datosQ = await getDocs(q)
 
-        const pokemon =[]
+        const Pokemon =[]
         datosQ.forEach((docu =>{
-            pokemon.push(docu.data())
+            Pokemon.push(docu.data())
         }))
-        dispatch(searchPokemonSync(pokemon))
+        dispatch(searchPokemonSync(Pokemon))
     }
 }
 

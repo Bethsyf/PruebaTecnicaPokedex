@@ -1,5 +1,7 @@
 import React from 'react'
-import { Button, Container, Form, FormControl, Navbar} from 'react-bootstrap'
+import { Button, Container, Form, FormControl, Nav, Navbar} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import Search from './CRUD/Search'
 
 const NavbarP = () => {
   return (
@@ -10,15 +12,7 @@ const NavbarP = () => {
     <Navbar.Toggle  aria-controls="navbarScroll" />
     <Navbar.Collapse className="d-flex justify-content-around">      
     <Button href='/add' variant="primary">Agregar Pokemon</Button>
-      <Form   className="d-flex  ">
-        <FormControl 
-          type="search"
-          placeholder="Buscar Pokemon por nombre"
-          className="me-1 border-warning"
-          aria-label="Search"
-        />
-        <Button variant="warning">Buscar</Button>        
-      </Form>        
+    <Search />       
     </Navbar.Collapse>
     <Button href='/login' variant="danger">Cerrar Sesión</Button>
   </Container>
