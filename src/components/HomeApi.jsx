@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { url } from '../helpers/url'
+import Footer from './Footer'
 
 
 const HomeApi = () => {
@@ -51,6 +52,7 @@ const HomeApi = () => {
           }
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

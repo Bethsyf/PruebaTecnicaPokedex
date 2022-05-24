@@ -2,6 +2,8 @@ import React from 'react'
 import { Button, Container, Navbar } from 'react-bootstrap'
 import List from './CRUD-Firestore/List'
 import Search from './CRUD-Firestore/Search'
+import Footer from './Footer'
+
 
 
 const Pokemon = () => {
@@ -16,6 +18,7 @@ const Pokemon = () => {
         </Container>
       </Navbar>
       <List />
+      <Footer/>
     </>
   )
 }
