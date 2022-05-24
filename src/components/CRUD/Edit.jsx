@@ -12,7 +12,7 @@ const Edit = ({ datos, setModal }) => {
     const [formValue, handleInputChange] = useForm({
         nombre: datos.nombre,
         tipo1: datos.tipo1,
-        tpo2: datos.tipo2,
+        tipo2: datos.tipo2,
         numero: datos.numero,
         evolucion: datos.evolucion
     })
@@ -34,17 +34,17 @@ const Edit = ({ datos, setModal }) => {
                 <Modal.Body>
                     <Form className='m-5 px-3 bg-light' onSubmit={handleSubmit} margin={50}>
                         <Form.Group >
-                            <Form.Label className='m-1 text-primary'>Número</Form.Label>
+                            <Form.Label className='mx-1 text-primary'>Número</Form.Label>
                             <Form.Control className='mb-2 mx-1 border-warning' type="text" name="numero" placeholder="Agrega numero" value={numero} onChange={handleInputChange} />
 
-                            <Form.Label className='mx-1 text-primary' >Nombre del Pokemón</Form.Label>
-                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="nombre" placeholder="Agrega el nombre" value={nombre} onChange={handleInputChange} />
+                            <Form.Label className='mx-1 text-primary'>Nombre</Form.Label>
+                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="nombre" placeholder="Agrega nombre" value={nombre} onChange={handleInputChange} />
 
                             <Form.Label className='mx-1 text-primary'>Tipo1</Form.Label>
-                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="tipo1" placeholder="Agrega tipo de pokemon" value={tipo1} onChange={handleInputChange} />
+                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="tipo1" placeholder="Agrega tipo 1 de pokemon" value={tipo1} onChange={handleInputChange} />
 
                             <Form.Label className='mx-1 text-primary'>Tipo2</Form.Label>
-                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="tipo2" placeholder="Agrega tipo de pokemon" value={tipo2} onChange={handleInputChange} />
+                            <Form.Control className='mb-2 mx-1 border-warning' type="text" name="tipo2" placeholder="Agrega tipo 2 de pokemon" value={tipo2} onChange={handleInputChange} />
 
                             <Form.Label className='mx-1 text-primary' >Evolución</Form.Label>
                             <Form.Control className='mb-2 mx-1 border-warning' type="text" name="evolucion" placeholder="Agrega nombre del pokemon que proviene" value={evolucion} onChange={handleInputChange} />

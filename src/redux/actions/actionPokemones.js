@@ -9,7 +9,6 @@ export const addPokemonAsync = (pokemon) => {
             .then(resp => {
                 dispath(addPokemonSync(pokemon))
                 dispath(listPokemonesSync())
-
             })
             .catch(error => {
                 console.warn(error)

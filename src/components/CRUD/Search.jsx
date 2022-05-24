@@ -28,12 +28,12 @@ const Search = () => {
         <FormControl 
           type="search"
           name="search"
-          placeholder="Buscar Pokemon por nombre"
+          placeholder="Buscar Pokemon"
           className="me-1 border-warning"
           aria-label="Search"
           onChange={formik.handleChange}
         />
-        <Button type="submit" name="searched" variant="warning">Buscar</Button> 
+        <Button type="submit" name="searched" variant="warning"><i className="fas fa-search"></i></Button> 
         </Form>
          </center>  
         </div>

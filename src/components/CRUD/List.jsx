@@ -28,7 +28,7 @@ const List = () => {
       <div className="row m-3" >
         {
           pokemones.map((p, index) => (
-            <Card className="col-sm-auto m-3 pokemon" key={index} style={{ width: '14rem' }} >
+            <Card className="col-sm-auto m-3 pokemon" id={p.numero} key={index+1} style={{ width: '14rem' }} >
               <Card.Img variant="top" src={p.foto} />
               <Card.ImgOverlay className="">
                 <div className="d-flex justify-content-between">
@@ -39,9 +39,8 @@ const List = () => {
                 <Nav.Link className="d-flex justify-content-end " onClick={() => editar(p)}><i className="fas fa-edit yellow-color"></i></Nav.Link>
               </Card.ImgOverlay>
               <div className="description">
-                <Card.Text className="text-danger" >Tipo: {p.tipo1} {p.tipo2}</Card.Text>
-                <Card.Text className="text-danger mb-5" >Evolución de: {p.evolucion}</Card.Text>
-                <div><Button className="card-button" href="/detail">Ver más... detalles</Button></div>
+                <Card.Text className="text-danger" >Tipo: {p.tipo1} / {p.tipo2}</Card.Text>
+                <Card.Text className="text-danger mb-3" >Evolución de: {p.evolucion}</Card.Text>                
               </div>
             </Card>
           ))
