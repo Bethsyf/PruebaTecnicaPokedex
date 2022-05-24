@@ -28,7 +28,7 @@ const Search = () => {
         <FormControl 
           type="search"
           name="search"
-          placeholder="Buscar Pokemon"
+          placeholder="Buscar Pokemon por nombre exacto"
           className="me-1 border-warning"
           aria-label="Search"
           onChange={formik.handleChange}

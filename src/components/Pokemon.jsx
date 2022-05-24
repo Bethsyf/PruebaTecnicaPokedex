@@ -1,9 +1,22 @@
 import React from 'react'
-import List from './CRUD/List'
+import { Button, Container, Navbar } from 'react-bootstrap'
+import List from './CRUD-Firestore/List'
+import Search from './CRUD-Firestore/Search'
+
 
 const Pokemon = () => {
   return (
-    <List/>
+    <>
+      <Navbar bg="light" expand="lg">
+        <Container fluid >
+          <Navbar.Collapse className="d-flex justify-content-around">
+            <Button href='/add' variant="primary border-warning">Agregar Pokemon</Button>
+            <Search />
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <List />
+    </>
   )
 }
 

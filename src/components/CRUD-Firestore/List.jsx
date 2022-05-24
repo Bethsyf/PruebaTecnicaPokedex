@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Card, Nav } from 'react-bootstrap'
+import {Card, Nav } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux';
 import { deletPokemonAsync, listPokemonesAsync } from '../../redux/actions/actionPokemones';
 import '../../styles/styles.css'
