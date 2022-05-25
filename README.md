@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# POKEDEX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+With this app engine you can find detailed information about each of the characters of Pokemon. This project have been made with ReactJS.
 
 ## Available Scripts
 
