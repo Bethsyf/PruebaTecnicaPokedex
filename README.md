@@ -1,10 +1,12 @@
 # POKEDEX
 
-With this app you can find detailed information about each of the characters of Pokemon. This project have been made with ReactJS.
+With this application you can find detailed information about each of the characters of Pokemon. This project have been made with ReactJS.
 
-## Available Scripts
+## Set up
 
-In the project directory, you can run:
+You'll need Node.js and Gulp on your local development machine.
+1. Clone the repo
+2. $ npm install to install the dependencies
 
 ### `npm start`
 
