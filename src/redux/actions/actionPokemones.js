@@ -37,9 +37,7 @@ export const listPokemonesAsync = () => {
             })
         })
         dispath(listPokemonesSync(pokemones))
-
     }
-
 }
 
 export const listPokemonesSync = (pokemon) => {
@@ -82,22 +80,17 @@ export const editPokemonAsync = (nombre, pokemon) => {
         const q = query(collectionListar, where('nombre', '==', nombre))
         const datosQ = await getDocs(q)
         let id
-
         datosQ.forEach(async(docu)=>{
             id= docu.id
         })
         console.log(id)
-
         const docRef = doc(DB, "PokemonesDB", id)
-
         await updateDoc(docRef, pokemon)
-
         .then(resp =>{ 
             dispatch(editPokemonSync(pokemon))
             console.log(resp)
         })
         .catch(error => console.warn(error))
-
         dispatch(listPokemonesAsync())
 
     }

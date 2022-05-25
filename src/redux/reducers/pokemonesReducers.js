@@ -18,7 +18,7 @@ export const pokemonesReducers = (state = initialState, action) => {
 
         case typesPokemon.delete:
             return {
-                pokemones: state.movies.filter(p => p.nombre !== action.payload)
+                pokemones: state.pokemones.filter(p => p.nombre !== action.payload)
             }
         case typesPokemon.edit:
             return {

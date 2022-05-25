@@ -23,7 +23,7 @@ const Detail = () => {
                 </Card>
                 <Card className="col-sm-auto m-3 pokemon" style={{ width: '18rem' }}>
                   <ListGroup  variant="flush">
-                    <ListGroup.Item className="bg-warning text-danger">Tipos: {pokemon.types[0].type.name} / {pokemon.types[1] ? pokemon.types[1].type.name : null}</ListGroup.Item>
+                    <ListGroup.Item className="bg-warning text-danger mt-5">Tipos: {pokemon.types[0].type.name} / {pokemon.types[1] ? pokemon.types[1].type.name : null}</ListGroup.Item>
                     <ListGroup.Item className="bg-warning text-danger">Habilidades: {pokemon.abilities[0].ability.name} / {pokemon.abilities[1] ? pokemon.abilities[1].ability.name : null}</ListGroup.Item>
                     <ListGroup.Item className="bg-warning text-danger">Principales movimientos: {pokemon.moves[0].move.name} - {pokemon.moves[1] ? pokemon.moves[1].move.name : null} - {pokemon.moves[2] ? pokemon.moves[2].move.name : null} - {pokemon.moves[3] ? pokemon.moves[3].move.name : null}</ListGroup.Item>
                     <ListGroup.Item className="bg-warning text-danger">Experiencia base: {pokemon.base_experience}</ListGroup.Item>
