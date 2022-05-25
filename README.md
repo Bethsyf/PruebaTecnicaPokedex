@@ -1,6 +1,6 @@
 # POKEDEX
 
-With this app engine you can find detailed information about each of the characters of Pokemon. This project have been made with ReactJS.
+With this app you can find detailed information about each of the characters of Pokemon. This project have been made with ReactJS.
 
 ## Available Scripts
 
