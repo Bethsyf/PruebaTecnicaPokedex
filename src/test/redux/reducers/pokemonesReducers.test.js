@@ -2,14 +2,14 @@ import { pokemonesReducers } from "../../../redux/reducers/pokemonesReducers";
 import { typesPokemon } from "../../../redux/types/typesPokemon";
 
 describe('Pruebas en PokemonesReducers', () => {
-    test('debe de Agregar Pokemon',()=>{
+    test('debe de Agregar Pokemon', () => {
         const initState = {
             pokemones: []
         }
-        const action ={
+        const action = {
             type: typesPokemon.add,
             payload: {
-               nombre: 'nombre'
+                nombre: 'nombre'
             }
         }
         const state = pokemonesReducers(initState, action);
@@ -19,11 +19,11 @@ describe('Pruebas en PokemonesReducers', () => {
             }]
         })
     })
-    test( 'debe de Editar al pokemon', () => {
+    test('debe de Editar al pokemon', () => {
         const initState = {
             pokemones: []
         }
-        const action ={
+        const action = {
             type: typesPokemon.edit,
             payload: {
                 nombre: 'nombre',
@@ -35,11 +35,11 @@ describe('Pruebas en PokemonesReducers', () => {
         })
     })
 
-    test('debe de  Borrar pokemon',()=>{
+    test('debe de  Borrar pokemon', () => {
         const initState = {
             pokemones: []
         }
-        const action ={
+        const action = {
             type: typesPokemon.delete,
             payload: {
                 nombre: 'nombre',
@@ -48,18 +48,17 @@ describe('Pruebas en PokemonesReducers', () => {
         const state = pokemonesReducers(initState, action)
         expect(state).toEqual({
             pokemones: state.pokemones.filter(p => p.nombre !== action.payload)
-        })                                      
+        })
     })
 
-    test('estado por defecto',()=>{
-        const initState={ 
+    test('estado por defecto', () => {
+        const initState = {
             pokemones: []
         }
-        const action ={
+        const action = {
             type: typesPokemon.OtroType,
         }
         const state = pokemonesReducers(initState, action)
         expect(state).toEqual(initState)
     })
 })
-

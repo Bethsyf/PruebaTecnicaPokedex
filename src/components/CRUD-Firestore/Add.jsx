@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { FileUpload } from '../../helpers/Fileupload';
 import { useForm } from '../../hooks/useForm';
 import { addPokemonAsync } from '../../redux/actions/actionPokemones';
 
 const Add = () => {
+    const navigate = useNavigate()
     const dispatch = useDispatch();
 
     const [formValue, handleInputChange, rest] = useForm({
@@ -35,12 +37,17 @@ const Add = () => {
             .catch(error => {
                 console.warn(error)
             })
-
     }
+    
     return (
         <div >
-            <Form className='mt-3 px-3 bg-light mx-auto' onSubmit={handleSubmit} margin={50} style={{ width: '600px' }}>
-                <h1 className='p-3 text-primary bg-warning'>Agregar Pokemón</h1>
+            <Form className='bg-light mx-auto' onSubmit={handleSubmit} style={{ width: '600px' }}>
+                <h1 className='p-3 text-primary bg-warning'>Agregar Pokemón
+                <img className="mx-4" src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653164820/izctxtxey7bfiym2tzbc.png' alt='logo' style={{ maxHeight: '50px' }} />
+                <button className="btn btn-light mx-4"
+                        onClick={() => navigate("/poke")}><i className='fa fa-times text-primary ' /><i />
+                    </button>
+                </h1>
                 <Form.Group >
                     <Form.Label className='m-1 text-primary'>Número</Form.Label>
                     <Form.Control className='mb-2 mx-1 border-warning' type="text" name="numero" placeholder="Agrega numero" value={numero} onChange={handleInputChange} />

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Card, Nav } from 'react-bootstrap'
+import { Card, Nav } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux';
 import { deletPokemonAsync, listPokemonesAsync } from '../../redux/actions/actionPokemones';
 import '../../styles/styles.css'
@@ -20,7 +20,7 @@ const List = () => {
   const editar = (pokemon) => {
     setModal(true)
     setDatos(pokemon)
-}
+  }
 
 
   return (
@@ -28,7 +28,7 @@ const List = () => {
       <div className="row m-3" >
         {
           pokemones.map((p, index) => (
-            <Card className="col-sm-auto m-3 pokemon" id={p.numero} key={index+1} style={{ width: '14rem' }} >
+            <Card className="col-sm-auto m-3 pokemon" id={p.numero} key={index + 1} style={{ width: '14rem' }} >
               <Card.Img variant="top" src={p.foto} />
               <Card.ImgOverlay className="">
                 <div className="d-flex justify-content-between">
@@ -40,15 +40,15 @@ const List = () => {
               </Card.ImgOverlay>
               <div className="description">
                 <Card.Text className="text-danger" >Tipo: {p.tipo1} / {p.tipo2}</Card.Text>
-                <Card.Text className="text-danger mb-3" >Evolución de: {p.evolucion}</Card.Text>                
+                <Card.Text className="text-danger mb-3" >Evolución de: {p.evolucion}</Card.Text>
               </div>
             </Card>
           ))
         }
       </div>
       {
-                modal === true ? <Edit datos={datos} setModal={setModal} /> : ''
-            }
+        modal === true ? <Edit datos={datos} setModal={setModal} /> : ''
+      }
     </div>
   )
 }

@@ -9,34 +9,34 @@ import { searchPokemonAsync } from '../../redux/actions/actionPokemones'
 const Search = () => {
   const dispatch = useDispatch()
 
-    const formik = useFormik({
-        initialValues:{
-            search:''},
-        validationSchema: Yup.object({
-            search: Yup.string().required('campo requerido')
-        }),
-        onSubmit: ({search})=>{
-            console.log(search)
-            dispatch(searchPokemonAsync(search))
-        }
-    })
+  const formik = useFormik({
+    initialValues: {
+      search: ''
+    },
+    validationSchema: Yup.object({
+      search: Yup.string().required('campo requerido')
+    }),
+    onSubmit: ({ search }) => {
+      console.log(search)
+      dispatch(searchPokemonAsync(search))
+    }
+  })
 
-    return (
-        <div> 
-          <center>
-           <Form   className="d-flex " onSubmit={formik.handleSubmit}>
-        <FormControl 
-          type="search"
-          name="search"
-          placeholder="Buscar Pokemon por nombre exacto"
-          className="me-1 border-warning"
-          aria-label="Search"
-          onChange={formik.handleChange}
-        />
-        <Button type="submit" name="searched" variant="warning"><i className="fas fa-search"></i></Button> 
+  return (
+    <div style={{ width: '50%' }}>
+      <center>
+        <Form className="d-flex " onSubmit={formik.handleSubmit}>
+          <FormControl
+            type="search"
+            name="search"
+            placeholder="Buscar Pokemon por nombre exacto"
+            className="me-1 border-warning"
+            onChange={formik.handleChange}
+          />
+          <Button type="submit" name="search" variant="warning"><i className="fas fa-search"></i></Button>
         </Form>
-         </center>  
-        </div>
+      </center>
+    </div>
   )
 }
 

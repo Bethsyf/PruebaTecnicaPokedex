@@ -2,7 +2,7 @@ export const FileUpload = async (file) => {
 
     const cloudUrl = 'https://api.cloudinary.com/v1_1/dmaviub4l/upload'
 
-    const  formData = new FormData();
+    const formData = new FormData();
     // donde la voy a conectar o enviar
     formData.append("upload_preset", "pokedex");
     //lo que quiero enviar o subir
@@ -12,8 +12,8 @@ export const FileUpload = async (file) => {
         method: 'POST',
         body: formData
     })
-       const cloudResp = await resp.json();
-       console.log(cloudResp);
-       return cloudResp.secure_url;
+    const cloudResp = await resp.json();
+    console.log(cloudResp);
+    return cloudResp.secure_url;
 
 }

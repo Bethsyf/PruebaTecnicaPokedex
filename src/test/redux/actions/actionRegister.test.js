@@ -10,9 +10,9 @@ describe('Verificar las acciones del register', () => {
 
         expect(registerAction).toEqual({
             type: typesLogin.register,
-        payload: {
-            email, pass, name
-        }
+            payload: {
+                email, pass, name
+            }
         })
-    })    
+    })
 })

@@ -10,6 +10,7 @@ describe('Verificar types', () => {
             logout: 'logout'
         })
     })
+
     test('Comparar el objeto de los types con el archivo typesPokemon', () => {
         expect(typesPokemon).toEqual({
             add: 'add',

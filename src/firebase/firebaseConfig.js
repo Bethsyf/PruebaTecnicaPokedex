@@ -10,15 +10,15 @@ const firebaseConfig = {
   messagingSenderId: "825840346378",
   appId: "1:825840346378:web:8a7e063aef2e90133f46f3"
 };
-  
-  const app = initializeApp(firebaseConfig);
-  const google = new GoogleAuthProvider();
-  const facebook = new FacebookAuthProvider();
-  const DB = getFirestore()
-  
-  export{
-    app,
-    google, 
-    facebook,
-    DB
-  }  
+
+const app = initializeApp(firebaseConfig);
+const google = new GoogleAuthProvider();
+const facebook = new FacebookAuthProvider();
+const DB = getFirestore()
+
+export {
+  app,
+  google,
+  facebook,
+  DB
+}  

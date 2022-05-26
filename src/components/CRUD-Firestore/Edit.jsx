@@ -29,7 +29,9 @@ const Edit = ({ datos, setModal }) => {
         <>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header className='bg-warning' closeButton>
-                    <Modal.Title className='text-primary'>Editar Pokemon</Modal.Title>
+                    <Modal.Title className='text-primary'>Editar Pokemon
+                    <img className="mx-4" src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653164820/izctxtxey7bfiym2tzbc.png' alt='logo' style={{ maxHeight: '50px' }} />
+                    </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form className='m-5 px-3 bg-light' onSubmit={handleSubmit} margin={50}>

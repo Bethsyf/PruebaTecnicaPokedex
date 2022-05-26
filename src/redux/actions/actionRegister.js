@@ -7,7 +7,7 @@ export const registerAsync = (email, pass, nombre) => {
         createUserWithEmailAndPassword(auth, email, pass)
             .then(async ({ user }) => {
                 console.log(user)
-                await updateProfile(auth.currentUser, { displayName: nombre})
+                await updateProfile(auth.currentUser, { displayName: nombre })
                 dispatch(registerSync(email, pass, nombre))
                 console.log('Usuario Registrado de manera exitosa')
             })

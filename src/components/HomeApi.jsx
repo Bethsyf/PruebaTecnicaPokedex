@@ -4,7 +4,6 @@ import { Button, Card } from 'react-bootstrap'
 import { url } from '../helpers/url'
 import Footer from './Footer'
 
-
 const HomeApi = () => {
   const [pokeArray, setPokeArray] = useState([]);
   const getData = async (url) => {
@@ -52,7 +51,7 @@ const HomeApi = () => {
           }
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

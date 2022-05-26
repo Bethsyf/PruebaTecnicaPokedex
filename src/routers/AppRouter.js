@@ -9,7 +9,7 @@ import { getAuth, onAuthStateChanged } from '@firebase/auth';
 import { Spinner } from 'react-bootstrap';
 
 function AppRouter() {
-  const [checking, setChecking] = useState(true)
+    const [checking, setChecking] = useState(true)
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     useEffect(() => {
@@ -39,7 +39,7 @@ function AppRouter() {
                     <Route path="/login" element={
                         <PublicRouters isAutentica={isLoggedIn}>
                             <Login />
-                         </PublicRouters>
+                        </PublicRouters>
 
                     } />
 
@@ -54,15 +54,12 @@ function AppRouter() {
                         <PrivateRouters isAutentica={isLoggedIn}>
                             <DashboardRouters />
                         </PrivateRouters>
-                    } />  
+                    } />
                 </Routes>
             </BrowserRouter>
 
         </>
-
-
-
-  );
+    );
 }
 
 export default AppRouter;

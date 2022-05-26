@@ -1,13 +1,12 @@
-.pokemon{
-    background-color: rgb(0, 117, 190);;
-    box-shadow: 0 6px 6px rgb(251, 27, 27);;
+.pokemon {
+    background-color: rgb(0, 117, 190);
+    box-shadow: 0 6px 6px rgb(251, 27, 27);
     position: relative;
     overflow: hidden;
     border-radius: 3px;
-} 
+}
 
-
-.description{   
+.description {
     background-color: rgb(255, 204, 0);
     padding: 5px;
     position: absolute;
@@ -17,13 +16,14 @@
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.5s ease-in;
-} 
-.pokemon:hover .description{
+}
+
+.pokemon:hover .description {
     transform: translateY(0)
-} 
+}
 
 .yellow-color {
-    color:rgb(255, 204, 0);
+    color: rgb(255, 204, 0);
 }
 
 .card-button {
@@ -38,9 +38,9 @@
     bottom: 0;
     opacity: 0;
     transition: 0.3s ease-out;
-   }
-     
-   .card:hover .card-button {
+}
+
+.card:hover .card-button {
     transform: translate(-50%, 50%);
     opacity: 1;
-   }
+}

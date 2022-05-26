@@ -14,22 +14,23 @@ describe('Pruebas en registerReducer', () => {
             }
         }
         const state = registerReducer(initState, action);
-        expect(state).toEqual({ 
-                email: 'bethsyfalcon@gmail.com',
-                pass: '123456',
-                name: 'bethsy'
+        expect(state).toEqual({
+            email: 'bethsyfalcon@gmail.com',
+            pass: '123456',
+            name: 'bethsy'
         })
     })
-    test('estado por defecto', ()=> {
+
+    test('estado por defecto', () => {
         const initState = {
             id: 'prueba',
-            name: 'Bethsy' 
+            name: 'Bethsy'
         }
         const action = {
             type: typesLogin.OtroType,
         }
         const state = registerReducer(initState, action);
-        expect (state).toEqual(initState)
-    }) 
-    
+        expect(state).toEqual(initState)
+    })
+
 })

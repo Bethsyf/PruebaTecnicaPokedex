@@ -9,14 +9,15 @@ const NavbarP = () => {
     <>
       <Navbar bg="light" expand="lg">
         <Container fluid className='d-flex' >
-          <Navbar.Brand href="/"><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653327695/o3mt4pt8xdytmvrwddt5.png' alt='logo' style={{ maxHeight: '100px' }} /></Navbar.Brand>          
+          <Navbar.Brand href="/"><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653327695/o3mt4pt8xdytmvrwddt5.png' alt='logo' style={{ maxHeight: '100px' }} /></Navbar.Brand>
+          <Navbar.Brand href="/"><img src='https://res.cloudinary.com/dmaviub4l/image/upload/v1653164820/izctxtxey7bfiym2tzbc.png' alt='logo' style={{ maxHeight: '100px' }} /></Navbar.Brand>
           <Navbar.Collapse className='d-grid gap-2 d-md-flex justify-content-md-end' id="navbarScroll">
             <Button href='/' variant="warning border-primary">Pokemones - PokeApi</Button>
             <Button href='/poke' variant="warning border-danger">Pokemones - Firestore</Button>
             <div className='d-grid gap-2 d-md-flex justify-content-md-end'>
-            <Button href='/login' variant="danger" onClick={() => dispatch(logoutAsync())}>Cerrar Sesión</Button>
+              <Button href='/login' variant="danger" onClick={() => dispatch(logoutAsync())}>Cerrar Sesión</Button>
             </div>
-          </Navbar.Collapse>          
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

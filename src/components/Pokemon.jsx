@@ -4,8 +4,6 @@ import List from './CRUD-Firestore/List'
 import Search from './CRUD-Firestore/Search'
 import Footer from './Footer'
 
-
-
 const Pokemon = () => {
   return (
     <>
@@ -18,7 +16,7 @@ const Pokemon = () => {
         </Container>
       </Navbar>
       <List />
-      <Footer/>
+      <Footer />
     </>
   )
 }

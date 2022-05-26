@@ -16,7 +16,8 @@ describe('Pruebas en loginReducer', () => {
             id: 'prueba',
             name: 'Bethsy'
         })
-    })   
+    })
+
     test('Cerrar sesion logout', () => {
         const initState = {
             id: 'prueba',
@@ -30,15 +31,15 @@ describe('Pruebas en loginReducer', () => {
         expect(state).toEqual([])
     })
 
-    test('estado por defecto', ()=> {
+    test('estado por defecto', () => {
         const initState = {
             id: 'prueba',
-            name: 'Bethsy' 
+            name: 'Bethsy'
         }
         const action = {
             type: typesLogin.OtroType,
         }
         const state = loginReducer(initState, action);
-        expect (state).toEqual(initState)
-    }) 
+        expect(state).toEqual(initState)
+    })
 })
