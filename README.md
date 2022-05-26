@@ -4,7 +4,7 @@ With this application you can find detailed information about each of the charac
 
 ##  📝 Set up
 
-You'll need Node.js and Gulp on your local development machine.
+You'll need Node.js on your local development machine.
 1. Clone the repo
 2. $ npm install to install the dependencies
 
